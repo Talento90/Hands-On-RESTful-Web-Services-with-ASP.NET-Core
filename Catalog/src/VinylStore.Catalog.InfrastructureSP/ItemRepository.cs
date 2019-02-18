@@ -29,10 +29,10 @@ namespace VinylStore.Catalog.InfrastructureSP
                 commandType: CommandType.StoredProcedure);
         }
 
-        public Item Add(Item order)
+        public Item Add(Item item)
         {
             var result =
-                _sqlConnection.ExecuteScalar<Item>("InsertItem", order, commandType: CommandType.StoredProcedure);
+                _sqlConnection.ExecuteScalar<Item>("InsertItem", item, commandType: CommandType.StoredProcedure);
             return result;
         }
 

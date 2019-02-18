@@ -1,4 +1,3 @@
-using FluentValidation.TestHelper;
 using VinylStore.Catalog.Domain.Commands.Item;
 using VinylStore.Catalog.Domain.Commands.Item.Validators;
 using VinylStore.Catalog.Domain.Entities;
